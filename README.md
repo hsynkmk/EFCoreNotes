@@ -3,133 +3,120 @@
 A structured guide to learning EF Core from foundational concepts to advanced techniques.
 
 <details>
-<summary>📚 Foundational Concepts</summary>
+<summary>📚 Core Fundamentals</summary>
 
 1. [DbContext and Entities](DbContextAndEntities.md)  
-   - Core building blocks of EF Core
-   - Context configuration and entity mapping
-
+   - Context lifecycle, entity configuration
 2. [Basic Queries](BasicQueries.md)  
-   - CRUD operations fundamentals
-   - LINQ syntax basics
-
+   - LINQ essentials, CRUD operations
 3. [Migrations](Migrations.md)  
-   - Database schema evolution
-   - Migration commands and workflows
+   - Database schema management
 </details>
 
 <details>
 <summary>📐 Data Modeling</summary>
-
 4. [Relationships](Relationships.md)  
-   - Configuring 1:1, 1:many, many:many relationships
-
+   - Navigation properties, relationship types
 5. [Cascade Delete](CascadeDelete.md)  
    - Delete behaviors and referential integrity
-
 6. [Global Query Filters](GlobalQueryFilters.md)  
    - Implementing soft delete patterns
    - Automatic filtering
+7. [Value Conversions](ValueConversions.md)  
+   - Custom type mappings
+8. [Owned Entities](OwnedEntities.md)  
+   - Complex type configurations
 </details>
 
 <details>
-<summary>🛠 Data Manipulation</summary>
-
-7. [Value Conversions](ValueConversions.md)  
-   - Custom data type mappings
-
-8. [Owned Entities](OwnedEntities.md)  
-   - Complex types and value objects
+<summary>🔄 Data Operations</summary>
 
 9. [Raw SQL Queries](RawSQLQueries.md)  
-   - Executing SQL commands safely
-
+   - SQL execution strategies
 10. [Transactions](Transactions.md)  
-    - Managing atomic operations
+    - ACID operations management
+11. [Bulk Operations](BulkOperations.md)  
+    - High-performance batch processing
+12. [Split Queries](SplitQueries.md)  
+    - Solving N+1 query issues
 </details>
 
 <details>
 <summary>⚡ Performance</summary>
 
-11. [Indexes and Constraints](IndexesAndConstraints.md)  
-    - Optimizing query performance
-
-12. [Compiled Queries](CompiledQueries.md)  
-    - Reusing query execution plans
-
-13. [Bulk Operations](BulkOperations.md)  
-    - Efficient bulk inserts/updates
+13. [Indexes and Constraints](IndexesAndConstraints.md)  
+    - Query optimization techniques
+14. [Compiled Queries](CompiledQueries.md)  
+    - Reusable query plans
+15. [Performance Optimization](PerformanceOptimization.md)  
+    - Benchmarking and tuning
 </details>
 
 <details>
-<summary>🔐 Advanced Concepts</summary>
+<summary>🔍 Advanced Features</summary>
 
-14. [Concurrency Handling](ConcurrencyHandling.md)  
+16. [Concurrency Handling](ConcurrencyHandling.md)  
     - Optimistic concurrency patterns
-
-15. [Logging and Diagnostics](LoggingAndDiagnostics.md)  
-    - Monitoring EF Core behavior
-
-16. [Shadow Properties](FieldMappingAndShadowProperties.md)  
-    - Metadata without entity properties
-
-17. [Database Providers](DatabaseProviders.md)  
-    - Working with different SQL engines
+17. [Temporal Tables](TemporalTables.md)  
+    - Historical data tracking
+18. [Change Tracking](ChangeTracking.md)  
+    - State management internals
+19. [Shadow Properties](FieldMappingAndShadowProperties.md)  
+    - Metadata without entity fields
 </details>
 
 <details>
-<summary>🏗 Application Integration</summary>
-
-18. [Dependency Injection](DependencyInjection.md)  
-    - Configuring EF Core in DI containers
-
-19. [Testing](Testing.md)  
-    - Unit testing strategies
-
-20. [Error Handling](ErrorHandling.md)  
-    - Exception management patterns
+<summary>📊 Query Techniques</summary>
+20. [Lazy Loading](LazyLoading.md)  
+    - On-demand navigation loading
+21. [Advanced Querying](AdvancedQuerying.md)  
+    - Complex LINQ patterns
+22. [Query Tags](QueryTagsAndLogging.md)  
+    - Query annotation for logging
 </details>
 
 <details>
-<summary>🚀 Production Ready</summary>
-
-21. [Deployment and Configuration](DeploymentAndConfiguration.md)  
-    - Environment-specific settings
-
-22. [Versioning and Schema Evolution](VersioningAndSchemaEvolution.md)  
-    - Managing breaking changes
+<summary>🛡️ Security & Reliability</summary>
 
 23. [Security Best Practices](SecurityBestPractices.md)  
     - SQL injection prevention
+24. [Error Handling](ErrorHandling.md)  
+    - Exception management strategies
+25. [Concurrency Handling](ConcurrencyHandling.md)  
+    - Data conflict resolution
 </details>
 
 <details>
-<summary>🧠 Expert Techniques</summary>
+<summary>🏗️ Application Integration</summary>
 
-24. [Temporal Tables](TemporalTables.md)  
-    - Historical data tracking
-
-25. [Change Tracking](ChangeTracking.md)  
-    - State management deep dive
-
-26. [Advanced Querying](AdvancedQuerying.md)  
-    - Complex LINQ patterns
+26. [Dependency Injection](DependencyInjection.md)  
+    - IoC container configuration
+27. [Unit Testing](UnitTesting.md)  
+    - Test patterns for EF Core
+28. [Integration Testing](Testing.md)  
+    - Database testing strategies
 </details>
 
-## Suggested Learning Path
-1. Start with **Foundational Concepts**
-2. Progress through **Data Modeling**
-3. Master **Data Manipulation** techniques
-4. Optimize with **Performance** section
-5. Explore **Advanced Concepts**
-6. Integrate with **Application Integration**
-7. Prepare for production with **Production Ready**
-8. Dive into **Expert Techniques**
+<details>
+<summary>🚀 Production Readiness</summary>
 
-```bash
-# Clone repository
-git clone https://github.com/hsynkmk/EFCoreNotes.git
-```
+29. [Deployment Strategies](DeploymentAndConfiguration.md)  
+    - Environment configurations
+30. [Schema Versioning](VersioningAndSchemaEvolution.md)  
+    - Managing breaking changes
+31. [Monitoring](MonitoringAndDiagnostics.md)  
+    - Health checks and diagnostics
+32. [Logging](LoggingAndDiagnostics.md)  
+    - Query logging and analysis
+</details>
+
+<details>
+<summary>🔌 Database Providers</summary>
+
+33. [Database Providers](DatabaseProviders.md)  
+    - SQL Server/PostgreSQL/SQLite
+</details>
+
 ## Contribution
 - Contributions welcome! Please ensure:
 - Follow existing documentation style
