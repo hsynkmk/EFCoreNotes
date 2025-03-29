@@ -15,6 +15,7 @@ A structured guide to learning EF Core from foundational concepts to advanced te
 
 <details>
 <summary>📐 Data Modeling</summary>
+   
 4. [Relationships](Relationships.md)  
    - Navigation properties, relationship types
 5. [Cascade Delete](CascadeDelete.md)  
@@ -67,6 +68,7 @@ A structured guide to learning EF Core from foundational concepts to advanced te
 
 <details>
 <summary>📊 Query Techniques</summary>
+   
 20. [Lazy Loading](LazyLoading.md)  
     - On-demand navigation loading
 21. [Advanced Querying](AdvancedQuerying.md)  
